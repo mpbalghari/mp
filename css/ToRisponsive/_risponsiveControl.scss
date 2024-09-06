@@ -1,0 +1,20 @@
+body{
+     @media screen and (max-width:800px) {
+          font-size: 1.9rem;
+          @import '800/nav';
+          @import '800/header';
+          @import '800/section-1';
+          @import '800/section-2';
+     }
+     @media screen and (max-width:600px) {
+          font-size: 1.7rem;
+          @import '600/nav';
+          @import '600/header';
+          @import '600/section-2';
+     }
+     @media screen and (max-width:300px) {
+          font-size: 1.5rem;
+          @import '300/nav';
+          @import '300/header';
+     }
+}

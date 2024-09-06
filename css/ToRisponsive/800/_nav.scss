@@ -1,0 +1,36 @@
+nav{
+     transition-duration: .4s;
+     padding: 0 6rem; 
+     .logo{
+          font-size: 3rem;
+     }
+     .links{
+          transition-duration: .9s;
+         flex-direction: column;
+         position: absolute;
+         right: 0;
+         width: 0rem;
+         opacity: 0;
+         overflow: hidden;
+         top:6rem;
+         align-items: end;
+         background-color: var(--black);
+         a{
+          width: 20rem;
+          padding: 2rem 4rem;
+          color: var(--white)
+         }
+         a:hover{
+          background-color: var(--blue);
+          color: var(--white);
+         }
+     }
+     .links-active{
+          opacity: 100%;
+          transition-duration: .3s;
+          width: auto;
+     }
+     .menu-button{
+          display: flex;
+     }
+}

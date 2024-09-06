@@ -1,0 +1,106 @@
+.section-4 {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     padding: 12rem;
+     font-size: 2rem;
+     background-color: var(--white);
+     color: var(--black);
+
+     .head {
+          text-align: center;
+          font-size: 1.9rem;
+
+          h1 {
+               color: var(--blue);
+               line-height: 5rem;
+          }
+
+          p {
+               font-size: 1.8rem;
+          }
+     }
+
+     .boxes {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 5rem;
+          margin: 3rem auto;
+          font-family: 1.4rem;
+          transition-duration: .3s;
+
+          .box {
+               padding: 1rem;
+               width: 50rem;
+               display: grid;
+               grid-template-columns: repeat(2, 1fr);
+               font-size: 1.8rem;
+               cursor: pointer;
+
+               .image {
+                    width: 20rem;
+                    height: 100%;
+                    background-color: var(--light-gray);
+                    padding: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: .3rem;
+
+                    img {
+                         width: 5rem;
+                    }
+               }
+
+               .content {
+                    padding: 1rem;
+                    width: 30rem;
+
+               }
+
+               &:hover {
+                    box-shadow: 0 0 2rem var(--light-gray);
+                    transform: scale(1.01);
+               }
+          }
+     }
+
+     @media screen and (max-width:650px) {
+          padding: 5rem 3rem;
+
+          .head {
+               h1 {
+                    font-size: 2.2rem;
+               }
+               p{
+                    font-size: 1.5rem;
+               }
+          }
+
+          .boxes {
+               .box {
+                    width: 100%;
+
+                    display: flex;
+                    box-shadow: 0 0 2rem var(--light-gray);
+                    flex-direction: column;
+
+                    &:hover {
+                         box-shadow: 0 0 4rem var(--light-gray);
+                    }
+
+                    .image {
+                         width: 100%;
+                         height: 15rem;
+                    }
+
+                    .content {
+                         width: 100%;
+                         font-size: 1.5rem;
+                         margin: 0;
+                    }
+               }
+          }
+     }
+}

@@ -1,0 +1,55 @@
+.section-2 {
+     font-size: 1.8rem;
+     text-align: center;
+     padding: 3rem 12rem;
+     background: white;
+     color: var(--black);
+
+     h4 {
+          color: var(--blue);
+     }
+
+     h2 {
+          text-decoration: underline;
+          line-height: 7rem;
+     }
+     p{
+          
+     }
+
+     .services-boxes {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          gap: 3rem;
+
+          .service-box {
+               text-align: left;
+               width: 30rem;
+               font-size: 1.8rem;
+               padding: 1.5rem;
+               border-radius: 1rem;
+               background:linear-gradient(35deg,rgba(159, 193, 248, 0.375),white);
+               box-shadow: 0 0 1rem rgb(189, 188, 188);
+
+               span {
+                    color: var(--blue);
+                    font-size: 4rem;
+               }
+
+               button {
+                    background-color: transparent;
+                    cursor: pointer;
+                    color: var(--blue);
+                    border: none;
+                    font-size: 2rem;
+                    margin-top: 1rem;
+               }
+
+               &:hover {
+                    box-shadow: 0 0 1rem rgb(135, 135, 135);
+                    ;
+               }
+          }
+     }
+}

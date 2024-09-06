@@ -1,0 +1,86 @@
+header {
+     // background-color: var(--light-gray);
+     
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1001%26quot%3b)' fill='none'%3e%3cpath d='M903.38 666.19C1035.99 634.82 1086.4 282.54 1287.8 279.74 1489.2 276.94 1569.48 422.93 1672.22 425.34' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M372.29 593.35C546.41 586.93 688.08 308.59 1008.31 308.33 1328.53 308.07 1481.81 442 1644.32 442.73' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M698.94 561.76C854.46 534.35 900.41 168.15 1176.3 148.06 1452.19 127.97 1528.9 4.07 1653.66 2.46' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M503.14 663.16C629.79 639.17 568.61 332.33 886.82 318.72 1205.02 305.11 1455.83 118.79 1654.17 117.12' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M371.42 653.58C479.41 648.9 564.42 467.87 761.71 467.55 958.99 467.23 956.85 537.55 1151.99 537.55 1347.14 537.55 1443.15 467.83 1542.28 467.55' stroke='rgba(51%2c121%2c194%2c0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1001'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+     background-position:center;
+     background-size: cover;
+     color: var(--black);
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     font-size: 2rem;
+     padding: 20rem 12rem;
+
+     h1 {
+
+          &:nth-child(1),
+          span {
+               color: var(--blue);
+          }
+     }
+
+     p {
+          padding-right: 40%;
+     }
+
+     button {
+          height: 4rem;
+          width: 13rem;
+          background-color: var(--blue);
+          cursor: pointer;
+          color: var(--white);
+          font-weight: bold;
+          border: none;
+          margin-top: 2rem;
+          transition-duration: .3s;
+
+          &:hover {
+               width: 16rem;
+          }
+     }
+
+     @keyframes threeDot1 {
+          50% {
+               margin-top: -1rem;
+          }
+
+          20% {
+               margin-top: 1rem;
+          }
+     }
+
+     @keyframes threeDot2 {
+          50% {
+               margin-top: 1rem;
+          }
+
+          70% {
+               margin-top: -1rem;
+          }
+     }
+
+     .three-dot-style {
+          position: absolute;
+          display: flex;
+          right: 13rem;
+          top: 8rem;
+          gap: 2rem;
+
+          i {
+               width: 2rem;
+               height: 2rem;
+               background-color: var(--blue);
+               border-radius: 50%;
+
+               &:nth-child(1) {
+                    animation: 2s threeDot1 infinite;
+               }
+
+               &:nth-child(3) {
+                    animation: 2s threeDot2 infinite;
+               }
+          }
+
+     }
+}

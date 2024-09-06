@@ -1,0 +1,67 @@
+.menu-button {
+     display: flex;
+     flex-direction: column;
+     cursor: pointer;
+     width: 3.6rem;
+     height: 3.6rem;
+     display: none;
+     z-index: 1000;
+
+     i {
+          width: 3.7rem;
+          height: .8rem;
+          background-color: var(--light-gray);
+          position: absolute;
+          transition-duration: .3s;
+          &:nth-child(1){
+               transform-origin: right;
+          }
+          &:nth-child(2){
+               margin-top: 1.3rem;
+          }
+          &:nth-child(3){
+               margin-top: 2.65rem;
+               transform-origin: right;
+          }
+     }
+     &:hover{
+         i{
+          background-color: var(--black);
+         } 
+     }
+     
+
+     
+}
+.menu-button-active {
+     
+     i:nth-child(1) {
+          transform: rotate(-45deg);
+     }
+     i:nth-child(2) {
+         transform: rotateY(90deg);
+     }
+     i:nth-child(3) {
+          transform: rotate(45deg);
+     }
+}
+
+@media screen and (max-width: 600px) {
+     .menu-button{
+
+          i{
+               width: 3.3rem;
+               height: .6rem;
+               &:nth-child(1){
+                    transform-origin: right;
+               }
+               &:nth-child(2){
+                    margin-top: 1.1rem;
+               }
+               &:nth-child(3){
+                    margin-top: 2.2rem;
+                    transform-origin: right;
+               }
+          }
+     }
+}
